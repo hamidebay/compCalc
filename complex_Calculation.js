@@ -4,7 +4,7 @@ let number;
 let root = 0;
 for (number = 0; number < numbers.length; number++) {
   root = Math.sqrt(numbers[number]).toFixed(2);
-  console.log(numbers[number] +" Karekökü: " + root);
+  console.log(numbers[number] + " Karekökü: " + root);
 }
 
 let index;
@@ -30,14 +30,12 @@ for (num = 0; num < numbers.length; num++) {
 }
 console.log("Ortalamasi: " + avarege);
 
-let sortedArray = numbers.sort(function(a, b){
-    return a - b;
+let sortedArray = numbers.sort(function (a, b) {
+  return a - b;
 });
 
 let smallestElement = sortedArray[0];
-console.log("En kücük sayi: " +smallestElement);
+console.log("En kücük sayi: " + smallestElement);
 
-let biggestElement = sortedArray[numbers.length-1];
+let biggestElement = sortedArray[numbers.length - 1];
 console.log("En büyük sayi: " + biggestElement);
-
-
