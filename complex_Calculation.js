@@ -13,7 +13,7 @@ for (number = 0; number < numbers.length; number++) {
 let index;
 let squares = 0;
 for (index = 0; index < numbers.length; index++) {
-  squares = Math.pow(numbers[index], 2);
+  squares = numbers[index] * numbers[index];
   console.log(numbers[index] + " Karesi: " + squares);
 }
 
@@ -25,7 +25,6 @@ for (i = 0; i < numbers.length; i++) {
 }
 console.log("Toplami: " + sum);
 
-
 //calculate avarege
 let num;
 let avarege = 0;
@@ -35,7 +34,6 @@ for (num = 0; num < numbers.length; num++) {
   avarege = summe / numbers.length;
 }
 console.log("Ortalamasi: " + avarege);
-
 
 //sort Array
 let sortedArray = numbers.sort(function (a, b) {
